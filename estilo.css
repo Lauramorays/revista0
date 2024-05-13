@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-regular.woff2') format('woff2'),
+         url('fonts/roboto-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family:  'Tungsten';
+    src: url('fonts/Tungsten.woff2')format(woff2),
+    url('fonts/Tungsten.woff') format('woff');
+
+}
+
+#colorblanco{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Tungsten';
+    
+    
+}
+#ima2{
+    width: 50px; /* Imagen de inicio*/
+    height: auto; /*  */
+}
+#ima1{
+    width: 150px; /*  */
+    height: auto; /* Para mantener la proporción de la imagen */
+}
+#ima{
+    width: 150px; /* Gente*/
+    height: auto; /*  */
+}
+h2, h3, h4, p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+h1 {
+    margin: 5px;
+    font-family: Tungsten;
+    font-size: 160px;
+    padding: 1px;
+}
+h2 {
+    font-family: Tungsten;
+    font-size: 60px;
+    color: #000000;
+    text-align: center;
+
+}
+h3 {
+    font-size: 55px;
+}
+h4{
+    color: #000000;
+    font-size: 20px;
+}
+h5{
+    font-size: 25px;color: #FFFFFF;
+
+}
+.text {
+    margin: 10px;
+    text-align: right; /* Alinea el texto a la derecha */  
+   
+}
+.textB{
+    color: #FFFFFF;
+}
+.text1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+body{
+    background-color:#FFB9B9;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+
+.caja {
+    flex-wrap: wrap;
+
+}
+
+.full-width {
+    grid-column: span 2; /* Ocupa dos columnas */
+    background-color: black; /* Fondo negro */
+    padding: 0px;
+   
+}
+.full-width1 {
+    grid-column: span 2; /* Ocupa dos columnas */
+    height: 20%;
+    background-color: rgb(255, 255, 255); /* Fondo negro */
+    padding: 0px;
+   
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.container {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas con igual anchura */
+    grid-template-rows: repeat(3, 1fr); /* Tres filas con igual altura */
+    gap: 1px; /* Espacio entre las celdas */
+    height: 100%;
+}
+
+.otro-cont {
+    background-color: #FFFFFF;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr ; /* Dos columnas con igual anchura */
+    grid-template-rows: repeat(3, 1fr); /* Tres filas con igual altura */
+    gap: 1px; /* Espacio entre las celdas */
+    height: 100%;
+    width: 100%;
+    position: relative;
+   
+    
+}
+.otro-contcolor {           /* SECCION CULTURA ETC */
+    background-color:#FFB9B9;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr ; 
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 0px; 
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+   
+    
+}
+.otro-cont2 {
+    background-color: #FFFFFF;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas con igual anchura */
+    grid-template-rows: repeat(3, 1fr); /* Tres filas con igual altura */
+    gap: 1px; /* Espacio entre las celdas */
+    height: 100%;
+    width: 100%;
+    
+   
+}
+
+.cont2 {  
+    display: flex;
+}
+.cont3 {
+    display: flex;
+}
+
+.cont4 {
+    border: #FFFFFF;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas con el mismo ancho */
+    gap: 50px; /* Espacio entre las columnas */
+
+}
+.cont5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas con el mismo ancho */
+    gap: 0px; /* Espacio entre las columnas */
+    justify-content: right;
+   
+    
+}
+.columna {
+    top: 0;
+    border-style: none;
+    margin: 20px; /* Espacio entre las columnas */
+    background-color: rgb(255, 255, 255); /* Color de fondo */
+    color: rgb(10, 10, 10); /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 80%;
+    
+}
+
+
+
+.column5 {
+    border: 1px solid black;
+    margin: 50px;
+    padding: 10px; /* Espacio dentro de cada columna */
+    text-align: left; /* Alineación del texto njustify-content: center*/
+    
+}
+.column4 {
+    border: 1px solid black;
+    margin: 30px;
+    padding: 20px; /* Espacio dentro de cada columna */
+    text-align: center; /* Alineación del texto njustify-content: center*/
+    
+}
+.formulario {
+    width: 100%;
+    background-color: #FFFFFF;
+    justify-content: center; /* Alinea los elementos horizontalmente en el centro */
+    border: 1px solid black;
+    border-radius: 60px;
+    display: flex;
+    align-items: center; /* Centra el contenedor exterior verticalmente */
+   
+}
+
+
+.full-width-container { /* SECION BALON  */
+    position: relative;
+    width: 100%; 
+    height: auto; 
+}
+
+.imagen {
+    width: 100%; 
+    height: auto; 
+    position: relative; /* Establece posición absoluta */
+    
+}
+
+.texto-superpuesto {
+    
+    position: absolute;
+    top: 50%; /* Posiciona el texto en la mitad superior del contenedor */
+    left: 16%; /* Posiciona el texto en el centro horizontal del contenedor */
+    transform: translate(-50%, -50%); /* Centra el texto vertical y horizontalmente */
+    text-align: left; /* Alinea el texto al centro */
+    color: white; /* Color del texto */
+}

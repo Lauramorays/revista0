@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje de Confirmación</title>
+</head>
+<body>
+    <script>
+        // Función para obtener los parámetros de la URL
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // Obtener los valores de nombre, correo y opciones de la URL
+        var nombre = getParameterByName('nombre');
+        var correo = getParameterByName('email');
+        var opciones = getParameterByName('opciones');
+
+        // Mostrar el mensaje de confirmación
+        var mensaje = 'Hola ' + nombre + ', gracias por suscribirte. Estarás recibiendo información sobre ' + opciones + ' en tu correo: ' + correo;
+        document.body.innerHTML = '<h2>' + mensaje + '</h2>';
+    </script>
+</body>
+</html>
